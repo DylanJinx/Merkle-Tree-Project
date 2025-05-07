@@ -5,7 +5,7 @@ Transaction Hash: `0x7376792fb22488f9b38d343e2c60a5c832456caba31f214449b6189706d
 
 ## scripts 运行实例
 
-- scripts/generateRoot.ts: 生成 `MerkleRoot` 以及`proofs.json`,
+- scripts/generateRoot.ts: 生成 `MerkleRoot` 以及`proofs.json`
 
 ```bash
 npx ts-node scripts/generateRoot.ts
@@ -13,7 +13,9 @@ npx ts-node scripts/generateRoot.ts
 
 ![generateRoot](imgs/generateRoot.png)
 
-scripts/updateRoot.ts: owner 修改`MerkleRoot`,
+---
+
+- scripts/updateRoot.ts: owner 修改`MerkleRoot`
 
 ```bash
 npx ts-node scripts/updateRoot.ts 0xcd534cfb59f5f3c1037e31935cf637ea7ce101b1a2ffd9e2b7a356977d9b9f20
@@ -21,7 +23,9 @@ npx ts-node scripts/updateRoot.ts 0xcd534cfb59f5f3c1037e31935cf637ea7ce101b1a2ff
 
 ![updateRoot](imgs/updateRoot.png)
 
-scripts/updateLatestUser.ts: user 修改 `latest_user`,
+---
+
+- scripts/updateLatestUser.ts: user 修改 `latest_user`,
 
 ```bash
 npx ts-node scripts/updateLatestUser.ts
