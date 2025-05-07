@@ -1,3 +1,19 @@
+## 目录结构
+
+```
+├── script
+│   └── Deploy.sol
+├── scripts
+│   ├── generateRoot.ts
+│   ├── proofs.json
+│   ├── updateLatestUser.ts
+│   └── updateRoot.ts
+├── src
+│   └── MerkleApp.sol
+├── test
+│   └── MerkleAppTest.sol
+```
+
 ## 合约信息
 
 Sepolia Contract Address: `0xC34E96318dCD5528008d94c5850481efb027C395`  
