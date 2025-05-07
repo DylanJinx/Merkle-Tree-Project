@@ -1,66 +1,15 @@
-## Foundry
+## 合约信息
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Sepolia Contract Address: `0xC34E96318dCD5528008d94c5850481efb027C395`
+Transaction Hash: `0x7376792fb22488f9b38d343e2c60a5c832456caba31f214449b6189706d7e834`
 
-Foundry consists of:
+## scripts 运行实例
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+scripts/generateRoot.ts: 生成 `MerkleRoot` 以及`proofs.json`, `npx ts-node scripts/generateRoot.ts`
+![generateRoot](imgs/generateRoot.png)
 
-## Documentation
+scripts/updateRoot.ts: owner 修改`MerkleRoot`, `npx ts-node scripts/updateRoot.ts 0xcd534cfb59f5f3c1037e31935cf637ea7ce101b1a2ffd9e2b7a356977d9b9f20`  
+![updateRoot](imgs/image.png)
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+scripts/updateLatestUser.ts: user 修改 `latest_user`, `npx ts-node scripts/updateLatestUser.ts`
+![updateLatestUser](./imgs/updateLatestUser.png)
